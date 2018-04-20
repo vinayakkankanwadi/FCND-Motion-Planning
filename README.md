@@ -89,5 +89,15 @@ Cull waypoints from the path you determine using search.
 This is simply a check on whether it all worked. Send the waypoints and the autopilot should fly you from start to goal!
 Steps listed at [## Run the project](./README.md#run-the-project).  
 
-It works!
 
+GRID  
+![GRID](./misc/current.png)  
+
+PLANNED PATH  
+![PLANNED PATH](./misc/path.png)  
+
+PRUNED PATH  
+![PRUNED PATH](./misc/pruned.png)  
+
+
+It works!
