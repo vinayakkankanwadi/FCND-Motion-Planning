@@ -3,8 +3,10 @@
 
 ---
 
+### Overview
+This project is a continuation of the Backyard Flyer project where you executed a simple square shaped flight path. In this project you will integrate the techniques that we have learned throughout the last several lessons to plan a path through an urban environment. 
 
-# Required Steps for a Passing Submission:
+### Steps:
 1. Load the 2.5D map in the colliders.csv file describing the environment.
 2. Discretize the environment into a grid or graph representation.
 3. Define the start and goal locations.
@@ -14,15 +16,8 @@
 7. Write it up.
 8. Congratulations!  Your Done!
 
-## [Rubric](https://review.udacity.com/#!/rubrics/1534/view) Points
-### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
-
----
-### Writeup / README
-
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  
-
-You're reading it! Below I describe how I addressed each rubric point and where in my code each point is handled.
+### README
+[README.md](./README.md): Writeup for this project
 
 ### Explain the Starter Code
 
