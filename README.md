@@ -87,7 +87,7 @@ Cull waypoints from the path you determine using search.
 ### 4. Executing the flight  
 #### 4.1. Does it work?
 This is simply a check on whether it all worked. Send the waypoints and the autopilot should fly you from start to goal!
-Steps listed at [## Run the project](./README.md#L30).  
+Steps listed at [## Run the project](./README.md#run-the-project).  
 
 It works!
 
