@@ -55,7 +55,7 @@ To run this project, you need to have the following software installed:
 #### 3.1. Set your global home position
 In the starter code, we assume that the home position is where the drone first initializes, but in reality you need to be able to start planning from anywhere. Modify your code to read the global home location from the first line of the `colliders.csv` file and set that position as global home (`self.set_home_position()`)  
 
-- Global home location is set at [`motion_planning.py`](./motion_planning.py#L122-L29)
+- Global home location is set at [`motion_planning.py`](./motion_planning.py#L122-L129)
 
 #### 3.2. Set your current local position
 In the starter code, we assume the drone takes off from map center, but you'll need to be able to takeoff from anywhere. Retrieve your current position in geodetic coordinates from `self._latitude`, `self._longitude` and `self._altitude`. Then use the utility function `global_to_local()` to convert to local position (using `self.global_home` as well, which you just set)  
