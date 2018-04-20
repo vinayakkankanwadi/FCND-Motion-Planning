@@ -28,7 +28,7 @@ To run this project, you need to have the following software installed:
 4. `source activate fcnd` to activate the environment (you'll need to do this whenever you want to work in this environment).
 
 ## Run the project
-1. Setup the environment by following [Setup Instructions](./README.md#L24)  
+1. Setup the environment by following [Setup Instructions](./README.md#setup-instructions-abbreviated)  
 2. Launch your [Udacity FCND Simulator](https://github.com/udacity/FCND-Simulator-Releases/releases)  
 3. In your terminal which has `fcnd` environment activated, pick your goal position and run the corresponding command  
 
