@@ -16,10 +16,24 @@ This project is a continuation of the Backyard Flyer project where you executed 
 7. Write it up.
 8. Congratulations!  Your Done!
 
-### README
-[README.md](./README.md): Writeup for this project
+### 1. README
+- [README.md](./README.md): Writeup for this project
+- [planning_utils.py](./planning_utils.py): Support utility file for `motion_planning.py`.  
+- [motion_planning.py](./motion_planning.py): Main code running the motion planning.  
 
-### Explain the Starter Code
+### 2. Explain the Starter Code
+
+#### 2.1 Test that `motion_planning.py` is a modified version of `backyard_flyer_solution.py` for simple path planning. Verify that both scripts work. Then, compare them side by side and describe in words how each of the modifications implemented in `motion_planning.py` is functioning.  
+
+- Inclusion of `planning_utils` which is support utility for `motion_planning`
+- States are defined using `auto()`  
+- Addition of PLANNING state in states and is used state_callback 
+- waypoints in class initial definition is used instead of all_waypoints 
+- In `state_callback()`, in Arming state, instead of calling `takeoff_transition()`, it is calling `plan_path()`  
+- In `state_callback()`, in Planning state, calliing `takeoff_transition()`  
+- Addition of new function `send_waypoints()`  
+- Addition of new function `plan_path()` which makes calculate box depricated
+
 
 #### 1. Explain the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
 These scripts contain a basic planning implementation that includes...
