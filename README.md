@@ -75,11 +75,17 @@ In the starter code, the goal position is hardcoded as some location 10 m north 
 #### 3.5. Modify A* to include diagonal motion (or replace A* altogether)
 Write your search algorithm. Minimum requirement here is to add diagonal motions to the A* implementation provided, and assign them a cost of sqrt(2). However, you're encouraged to get creative and try other methods from the lessons and beyond!  
 
+For optimization, we add the diagonal motions in the Action class, defined in the planning_utils.py file. The cost of the diagonal action is defined as a square root of 2. Also the valid_actions(grid, current_node) function has to be extended for the diagonal motions
+
 - Diagnoal motions with a cost of sqrt(2) were added at [`planning_utils.py`](./planning_utils.py#L59-L63)  
 - Diagonal actions were added at [`planning_utils.py`](./planning_utils.py#L94-L102)  
 
 #### 3.6. Cull waypoints 
 Cull waypoints from the path you determine using search. 
+
+There are two possibilities to optimize the waypoints:
+- Collinearity check I used the concept of the collinearity check to prune waypoints in a line. The collinearity check calculates the determinant of a matrix which consists of three consecutive waypoints.
+- Bresenham ray tracing Bresenham algorithm provides a ray tracing from a start point to a goal point.
 
 - Cull waypoints by calling `prune_path()` at [`motion_planning.py`](./motion_planning.py#L167)  
 - `collinearity_float()` returning true or false given three waypoints is used at [`planning_utils.py`](./planning_utils.py#L188)
